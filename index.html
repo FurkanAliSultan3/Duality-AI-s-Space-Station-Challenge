@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duality AI — Space Station Challenge: Safety Object Detection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebar" class="sidebar expanded" tabindex="0" aria-label="Main navigation">
+    <button id="sidebar-toggle" aria-label="Toggle sidebar" title="Toggle sidebar" tabindex="0">
+      <span id="sidebar-toggle-icon">≡</span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="#/" data-route="landing" class="sidebar-link active" tabindex="0">🏠<span class="sidebar-text">Landing</span></a></li>
+        <li><a href="#/explorer" data-route="explorer" class="sidebar-link" tabindex="0">🗂<span class="sidebar-text">Dataset Explorer</span></a></li>
+        <li><a href="#/training" data-route="training" class="sidebar-link" tabindex="0">📈<span class="sidebar-text">Training Dashboard</span></a></li>
+        <li><a href="#/inference" data-route="inference" class="sidebar-link" tabindex="0">🤖<span class="sidebar-text">Inference Demo</span></a></li>
+        <li><a href="#/job" data-route="job" class="sidebar-link" tabindex="0">🛰<span class="sidebar-text">Falcon Job Creator</span></a></li>
+        <li><a href="#/checklist" data-route="checklist" class="sidebar-link" tabindex="0">✅<span class="sidebar-text">Submission Checklist</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="spa-root" tabindex="0" aria-live="polite"></main>
+
+  <div id="modal-backdrop" class="hidden" aria-hidden="true"></div>
+  <div id="modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <button id="modal-close" aria-label="Close" title="Close modal" tabindex="0">&times;</button>
+    <div id="modal-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
